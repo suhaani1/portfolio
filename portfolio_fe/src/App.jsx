@@ -42,7 +42,7 @@ import Skills from "./components/Skills/Skills";
 import Experience from "./components/experience/Experience";
 import Achievements from "./components/achievements/Achievements";
 import Projects from "./components/projects/Projects";
-import Contact from "./components/Contacts/Contact";
+import Contact from "./components/contacts/Contact";
 import Footer from "./footer/Footer";
 
 function App() {
