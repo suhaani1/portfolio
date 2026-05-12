@@ -1,0 +1,115 @@
+.achievements {
+  padding: 100px 0;
+  background-color: #ffffff; /* Clean white background */
+  color: #1e293b;
+  width: 100%;
+}
+
+.container {
+  max-width: 95%; /* Matches your Experience section width */
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Section Header */
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title h2 {
+  font-size: 3.5rem; /* Large headline */
+  color: #0284c7;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.section-title p {
+  color: #64748b;
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Achievement Grid */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+/* Achievement Card */
+.achievement-card {
+  background: #f8fafc; /* Very light gray card */
+  padding: 50px 40px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-card:hover {
+  transform: translateY(-15px);
+  background: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 20px 40px rgba(2, 132, 199, 0.1);
+}
+
+/* Icon Styling */
+.achievement-icon {
+  font-size: 3.5rem; /* Extra large icons */
+  color: #0284c7;
+  background: #f0f9ff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.1) rotate(10deg);
+  background: #0284c7;
+  color: #ffffff;
+}
+
+/* Text inside Cards */
+.achievement-card h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.achievement-card p {
+  font-size: 1.2rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .section-title h2 { font-size: 2.8rem; }
+  .achievement-card { padding: 40px 30px; }
+}
+
+@media screen and (max-width: 768px) {
+  .container { padding: 0 20px; }
+  
+  .section-title h2 { font-size: 2.2rem; }
+  
+  .achievement-grid {
+    grid-template-columns: 1fr; /* Stacked on mobile */
+  }
+
+  .achievement-card h3 { font-size: 1.5rem; }
+  .achievement-card p { font-size: 1.1rem; }
+}

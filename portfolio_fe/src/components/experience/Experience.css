@@ -1,0 +1,184 @@
+.experience {
+  padding: 80px 0;
+  background-color: #ffffff; /* Very light gray background */
+  color: #1e293b; /* Deep slate for primary text */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header */
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title h2 {
+  font-size: 3.5rem;
+  color: #0284c7; /* Darker blue for light mode readability */
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #64748b; 
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+}
+
+/* The Vertical Line */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #e2e8f0; /* Subtle light gray line */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Timeline Item Wrapper */
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+/* The Icons/Dots */
+.timeline-dot {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  right: -21px; 
+  background: #ffffff;
+  border: 3px solid #0284c7; /* Bold blue border */
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -21px;
+}
+
+/* The Content Cards */
+.timeline-content {
+  padding: 25px;
+  background: #ffffff; /* Solid white card */
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: #0284c7;
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-date {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0284c7;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  font-size: 1.2rem;
+  color: #475569; /* Slightly lighter gray for company name */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Points List Styling */
+.timeline-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-content ul li {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #334155;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* Bullet points for light theme */
+.timeline-item:nth-child(odd) .timeline-content ul li::after {
+  content: "•";
+  color: #0284c7;
+  margin-left: 10px;
+}
+
+.timeline-item:nth-child(even) .timeline-content ul li::before {
+  content: "•";
+  color: #0284c7;
+  margin-right: 10px;
+}
+
+/* Responsiveness (Mobile) */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    text-align: left !important;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0%;
+  }
+
+  .timeline-dot {
+    left: 10px !important;
+    right: auto;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content ul li::after {
+    content: none;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content ul li::before {
+    content: "•";
+    color: #0284c7;
+    margin-right: 10px;
+  }
+}
