@@ -42,8 +42,8 @@ import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
 import Achievements from "./components/achievements/Achievements";
 import Projects from "./components/projects/Projects";
-import Contact from "./components/contacts/Contact";
-import Footer from "./footer/Footer";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
 
