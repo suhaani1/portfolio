@@ -36,12 +36,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Experience from "./components/experience/Experience";
-import Achievements from "./components/achievements/Achievements";
-import Projects from "./components/projects/Projects";
+import Hero from "./components/heroo/Hero";
+import About from "./components/aboutt/About";
+import Skills from "./components/skillss/Skills";
+import Experience from "./components/experiencee/Experience";
+import Achievements from "./components/achievementss/Achievements";
+import Projects from "./components/projectss/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
