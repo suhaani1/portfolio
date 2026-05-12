@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { TypeAnimation } from "react-type-animation";
 
+import profileImg from "../../assets/PHOTO1.jpeg";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -89,8 +91,8 @@ const Hero = () => {
             <button className="btn secondary">
 
               <FaDownload />
-              <a href="https://drive.google.com/file/d/1YHZKr16ARkEJE3Hsg6kCpSgJTJgHHbve/view?usp=sharing"
-                download="Suhani_Kumari_Resume.pdf"
+              <a href="https://docs.google.com/document/d/1WGvNnO9-KvollQNgEU36KG_xYItCHeFQ/edit?usp=sharing&ouid=113436199946400707331&rtpof=true&sd=true" target="_blank" rel="noreferrer"
+                
               >
                 Download Resume
               </a>
@@ -168,7 +170,7 @@ const Hero = () => {
           <div className="hero-image-wrapper">
 
             <img
-              src="src\assets\PHOTO1.jpeg"
+              src={profileImg}
               alt="Suhani Kumari"
             />
 
