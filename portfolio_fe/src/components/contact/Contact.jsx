@@ -56,7 +56,7 @@ const Contact = () => {
         formData
       );
 
-      alert(res.data.message);
+      alert("Message Sent Successfully!");
 
       /* Reset */
 
@@ -69,9 +69,21 @@ const Contact = () => {
 
       });
 
+       /* Scroll To Top */
+
+    window.scrollTo({
+
+      top:0,
+
+      behavior:"smooth"
+
+    });
+
     } catch (error) {
 
       alert("Something went wrong");
+
+      console
     }
   };
 
