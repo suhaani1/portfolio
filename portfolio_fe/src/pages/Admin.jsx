@@ -15,7 +15,7 @@ const Admin = () => {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/contact"
+        "https://portfolio-api-gdt7.onrender.com/api/contact"
       );
 
       setMessages(res.data.data);
