@@ -36,9 +36,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
 import Achievements from "./components/achievements/Achievements";
 import Projects from "./components/projects/Projects";
