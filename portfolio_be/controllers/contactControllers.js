@@ -41,30 +41,30 @@ const sendMessage = async (req, res) => {
 
     /* Send Email */
 
-    await transporter.sendMail({
+    // await transporter.sendMail({
 
-      from:email,
+    //   from:email,
 
-      to:process.env.EMAIL_USER,
+    //   to:process.env.EMAIL_USER,
 
-      subject:`Portfolio Contact: ${subject}`,
+    //   subject:`Portfolio Contact: ${subject}`,
 
-      html:`
+    //   html:`
 
-        <h2>New Portfolio Message</h2>
+    //     <h2>New Portfolio Message</h2>
 
-        <p><strong>Name:</strong> ${name}</p>
+    //     <p><strong>Name:</strong> ${name}</p>
 
-        <p><strong>Email:</strong> ${email}</p>
+    //     <p><strong>Email:</strong> ${email}</p>
 
-        <p><strong>Subject:</strong> ${subject}</p>
+    //     <p><strong>Subject:</strong> ${subject}</p>
 
-        <p><strong>Message:</strong></p>
+    //     <p><strong>Message:</strong></p>
 
-        <p>${message}</p>
+    //     <p>${message}</p>
 
-      `
-    });
+    //   `
+    // });
 
     res.status(201).json({
 
